@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #fff; 
+    color: #212121;
+    margin: 0;
+    transition:  .3s;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.canvas{
+    margin: 100px auto 100px;
+    text-align: center;
+    width: 80%;
+}
+
+.button{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#grey{
+    background: gray;
+}
+
+#yellow{
+    background: yellow;
+}
+
+#blue{
+    background: blue;
+}
+
+#white{
+    background: white;
+}

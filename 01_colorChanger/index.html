@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Switcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script type="module" src="../01_colorChanger/script.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+</head>
+<body>
+    <div class="main1">
+        <nav>
+            <a href="/" target="_self" aria-current="page">Home</a>
+            <a href="https://github.com/" target="_blank">Github</a>
+        </nav>
+        <div class="canvas">
+            <h1>Color Scheme Switcher</h1>
+            <div class="button" id="grey"></div>
+            <div class="button" id="white"></div>
+            <div class="button" id="blue"></div>
+            <div class="button" id="yellow"></div>
+        </div>
+    
+        <h2>Try clicking on one of the colors above <span>to change the background color of this page!</span></h2>
+    </div>
+</body>
+<!-- <script>
+    $(document).ready(function(){
+    $("#grey").click(function(){
+        document.body.style.backgroundColor = "grey"
+        $("h1").css("color", "white")
+        $("h2").css("color", "white")
+    });
+    $("#white").click(function() {
+        document.body.style.backgroundColor = "white";
+        $("h1").css("color", "black")
+        $("h2").css("color", "black")
+    });
+    $("#yellow").click(function(){
+        document.body.style.backgroundColor = "yellow";
+        $("h1").css("color", "black")
+        $("h2").css("color", "black")
+    });
+    $("#blue").click(function(){
+        document.body.style.backgroundColor = "blue";
+        $("h1").css("color", "white")
+        $("h2").css("color", "white")
+    });
+});
+</script> -->
+</html>
