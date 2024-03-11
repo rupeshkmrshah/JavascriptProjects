@@ -8,7 +8,6 @@ body{
     color: black;
     background-color: white;
     margin: 0;
-    
 }
 
 nav{
@@ -59,6 +58,12 @@ h1{
     gap: 1.5rem;
 }
 
+@media  (max-width: 768px){
+    .project{
+        grid-template-columns:repeat(1, 1fr) ;
+    }
+}
+
 .project-link{
     text-align: center;
     background-color: #eee;
@@ -70,3 +75,4 @@ h1{
     font-weight: 600;
     font-size: 1rem;
 }
+
