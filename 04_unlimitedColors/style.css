@@ -1,0 +1,16 @@
+.button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 15px 45px;
+    font-size: large;
+}
