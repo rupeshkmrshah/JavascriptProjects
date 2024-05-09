@@ -50,48 +50,5 @@ function okdel(e) {
     }
 }
 
-//editable list
-let isEditing = false;
-let currentItem;
-function startEdit(e){
-    isEditing=true;
-    currentItem=e.target.parentNode;
-    showInput(currentItem);
-}
-
-function cancelEdit(){
-    isEditing=false;
-    hideInput();
-}
-
-function saveEdit(){
-    let text=input.value;
-    if(!text)return;
-    currentItem.innerHTML=text;
-    isEditing=false;
-    hideInput();
-    currentItem.classList.remove("editing");
-}
-
-function keyCheck(e){
-    if(e.key==="Enter")
-        saveEdit();
-    else if(e.key==='Escape')
-        cancelEdit();
-}
-
-function showInput(item){
-    input.style.display="block";
-    input.focus();
-    input.value=item.innerText;
-    item.classList.add("editing");
-    input.addEventListener('keydown',keyCheck);
-}
-
-function hideInput(){
-    input.style.display="none";
-    input.removeEventListener('keydown',keyCheck);
-}
-
 buttontdl.addEventListener('click', clickButton)
 listtdl.addEventListener('click', okdel)
